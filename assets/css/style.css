@@ -1,0 +1,25 @@
+html,
+body,
+pre,
+code,
+kbd,
+samp {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.nav {
+    text-decoration: none;
+}
+
+.nav-links ul li {
+    display: inline-block;
+}
+
+.main-section h1 {
+    display: inline-block;
+}
+
+i .nes-pokeball {
+    width: 25px;
+    height: 25px;
+}
