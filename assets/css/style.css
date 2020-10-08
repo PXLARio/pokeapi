@@ -7,19 +7,51 @@ samp {
     font-family: 'Press Start 2P', cursive;
 }
 
+body {
+    background-image: url('../../assets/img/pokeballs.jpg');
+}
+
+.container-sm {
+    background-color: turquoise;
+    height: auto;
+}
+
 .nav {
     text-decoration: none;
+}
+
+.nav-links {
+    margin-left: auto;
 }
 
 .nav-links ul li {
     display: inline-block;
 }
 
+.main-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
 .main-section h1 {
     display: inline-block;
+    padding-bottom: 20px;
 }
 
 i .nes-pokeball {
     width: 25px;
     height: 25px;
+}
+
+.col-sm {
+    height: 800px;
+}
+
+.col-sm h3 {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.footer {
+    background: turquoise;
 }

@@ -7,15 +7,17 @@
     <title>Pokemon API</title>
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href=" https://unpkg.com/nes.css@latest/css/nes.min.css " rel="stylesheet " />
+    <link href=" https://unpkg.com/nes.css@latest/css/nes.min.css " rel="stylesheet" />
     <link rel="stylesheet " href="assets/css/style.css ">
     <script src="assets/js/script.js" defer></script>
 </head>
 
 <body>
-    <div class="container ">
-        <div class="nav">
-            <div class="brand-logo"></div>
+    <div class="container-sm ">
+        <div class="nav nes-container with-title is-centered">
+            <div class="brand-logo">
+                <h3>Pokemon matcher</h3>
+            </div>
             <div class="nav-links">
                 <ul>
                     <li><a href="#home ">Home</a></li>
@@ -27,15 +29,35 @@
         <div class="main-section ">
             <h1>Pick your pokemon!</h1>
             <i class="nes-pokeball"></i>
-            <div class="menu-select">
-                <label for="default_select">Default select</label>
-                <div class="nes-select">
-                    <select required id="pokemon-dropdown"></select>
+            <div class="row">
+
+                <!-- FIRST POKEMON SELECTION -->
+                <div class="col-sm">
+                    <div class="menu-select">
+                        <div class="nes-select">
+                            <select required id="pokemon-dropdown-one"></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <h3>VS</h3>
+                </div>
+
+                <!-- SECOND POKEMON SELECTION -->
+                <div class="col-sm">
+                    <div class="menu-select">
+                        <div class="nes-select">
+                            <select required id="pokemon-dropdown-two"></select>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="footer ">
+                <p class="copyright">&copy;2020 John Nutter <a href="mailto:hello@jnutterdev.com">jnutterdev.com</a></p>
+            </div>
         </div>
-        <div class="footer "></div>
     </div>
+
 </body>
 
 </html>
