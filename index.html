@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon API</title>
+    <title>Pokémon player battle</title>
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href=" https://unpkg.com/nes.css@latest/css/nes.min.css " rel="stylesheet" />
@@ -14,9 +14,11 @@
 
 <body>
     <div class="container-sm ">
+
+        <!-- BRAND AND NAVIGATION HEADER -->
         <div class="nav nes-container with-title is-centered">
             <div class="brand-logo">
-                <h3>Pokemon matcher</h3>
+                <h3>Pokémon matcher</h3>
             </div>
             <div class="nav-links">
                 <ul>
@@ -27,13 +29,15 @@
             </div>
         </div>
         <div class="main-section ">
-            <h1>Pick your pokemon!</h1>
+            <i class="nes-ash"></i>
+            <h1>Pick your Pokémon!</h1>
             <i class="nes-pokeball"></i>
             <div class="row">
 
                 <!-- FIRST POKEMON SELECTION -->
                 <div class="col-sm">
                     <div class="menu-select">
+                        <label for="player-one">Player One</label>
                         <div class="nes-select">
                             <select required id="pokemon-dropdown-one"></select>
                         </div>
@@ -46,12 +50,15 @@
                 <!-- SECOND POKEMON SELECTION -->
                 <div class="col-sm">
                     <div class="menu-select">
+                        <label for="player-two">Player Two</label>
                         <div class="nes-select">
                             <select required id="pokemon-dropdown-two"></select>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- FOOTER -->
             <div class="footer ">
                 <p class="copyright">&copy;2020 John Nutter <a href="mailto:hello@jnutterdev.com">jnutterdev.com</a></p>
             </div>
