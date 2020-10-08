@@ -13,13 +13,14 @@
 </head>
 
 <body>
-    <div class="container-sm ">
-
-        <!-- BRAND AND NAVIGATION HEADER -->
+    <!-- MAIN CONTAINER -->
+    <div class="container ">
+        <!-- BRAND LOGO -->
         <div class="nav nes-container with-title is-centered">
             <div class="brand-logo">
                 <h3>Pokémon matcher</h3>
             </div>
+            <!-- NAVIGATION LINKS -->
             <div class="nav-links">
                 <ul>
                     <li><a href="#home ">Home</a></li>
@@ -28,39 +29,42 @@
                 </ul>
             </div>
         </div>
-        <div class="main-section ">
-            <i class="nes-ash"></i>
-            <h1>Pick your Pokémon!</h1>
-            <i class="nes-pokeball"></i>
-            <div class="row">
+        <div class="container-sm ">
+            <!-- MAIN CONTENT SECTION -->
+            <div class="main-section ">
+                <i class="nes-ash"></i>
+                <h1>Pick your Pokémon!</h1>
+                <i class="nes-pokeball"></i>
+                <div class="row">
 
-                <!-- FIRST POKEMON SELECTION -->
-                <div class="col-sm">
-                    <div class="menu-select">
-                        <label for="player-one">Player One</label>
-                        <div class="nes-select">
-                            <select required id="pokemon-dropdown-one"></select>
+                    <!-- FIRST POKEMON SELECTION -->
+                    <div class="col-sm">
+                        <div class="menu-select">
+                            <label for="player-one">Player One</label>
+                            <div class="nes-select">
+                                <select required id="pokemon-dropdown-one"></select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <h3>VS</h3>
+                    </div>
+
+                    <!-- SECOND POKEMON SELECTION -->
+                    <div class="col-sm">
+                        <div class="menu-select">
+                            <label for="player-two">Player Two</label>
+                            <div class="nes-select">
+                                <select required id="pokemon-dropdown-two"></select>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm">
-                    <h3>VS</h3>
-                </div>
 
-                <!-- SECOND POKEMON SELECTION -->
-                <div class="col-sm">
-                    <div class="menu-select">
-                        <label for="player-two">Player Two</label>
-                        <div class="nes-select">
-                            <select required id="pokemon-dropdown-two"></select>
-                        </div>
-                    </div>
+                <!-- FOOTER -->
+                <div class="footer ">
+                    <p class="copyright">&copy; 2020 John Nutter <a href="mailto:hello@jnutterdev.com">jnutterdev.com</a></p>
                 </div>
-            </div>
-
-            <!-- FOOTER -->
-            <div class="footer ">
-                <p class="copyright">&copy;2020 John Nutter <a href="mailto:hello@jnutterdev.com">jnutterdev.com</a></p>
             </div>
         </div>
     </div>

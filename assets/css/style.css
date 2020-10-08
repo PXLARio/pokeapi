@@ -9,11 +9,21 @@ samp {
 
 body {
     background-image: url('../../assets/img/pokeballs.jpg');
+    color: white;
+}
+
+.container {
+    background-color: #3B4CCA;
 }
 
 .container-sm {
-    background-color: turquoise;
+    background-color: #3B4CCA;
     height: auto;
+    padding: 0 40px;
+}
+
+.nes-container {
+    width: 100%;
 }
 
 .nav {
@@ -26,6 +36,16 @@ body {
 
 .nav-links ul li {
     display: inline-block;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #B3A125;
+}
+
+.nav-links ul li a:hover {
+    text-decoration: none;
+    color: #FFDE00;
 }
 
 .main-section {
@@ -53,6 +73,6 @@ i .nes-pokeball {
 }
 
 .footer {
-    background: turquoise;
+    background: #3B4CCA;
     padding: 30px 20px;
 }
