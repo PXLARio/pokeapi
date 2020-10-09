@@ -38,12 +38,14 @@ body {
     display: inline-block;
 }
 
-.nav-links ul li a {
+.nav-links ul li a,
+.footer a {
     text-decoration: none;
     color: #B3A125;
 }
 
-.nav-links ul li a:hover {
+.nav-links ul li a:hover,
+.footer a:hover {
     text-decoration: none;
     color: #FFDE00;
 }
