@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 fetch_pokemon = () => {
     fetch(`https://pokeapi.co/api/v2/pokemon?limit=100`)
         .then(function(response) {
@@ -26,6 +27,63 @@ fetch_pokemon = () => {
 fetch_pokemon();
 
 
+=======
+const P = new Pokedex.Pokedex();
+
+var interval = {
+    limit: 100,
+    offset: 0
+}
+
+P.getPokemonsList(interval)
+    .then(function(response) {
+        return response;
+    }).then(function(response) {
+
+
+
+        // let pokemonListOne = document.getElementById('pokemon-dropdown-one');
+        // playerOne.map(function(pokemon) {
+        //     let pokeElementOne = document.createElement('option');
+        //     pokeElementOne.setAttribute('value', pokemon);
+        //     pokeElementOne.innerHTML = pokemon.name;
+        //     pokemonListOne.appendChild(pokeElementOne);
+    });
+// let playerTwo = data.results;
+// let pokemonListTwo = document.getElementById('pokemon-dropdown-two');
+// playerTwo.map(function(pokemon) {
+// let pokeElementTwo = document.createElement('option');
+// pokeElementTwo.setAttribute('value', pokemon);
+// pokeElementTwo.innerHTML = pokemon.name;
+// pokemonListTwo.appendChild(pokeElementTwo);
+// });
+// })
+
+
+
+// fetch(`https://pokeapi.co/api/v2/pokemon?limit=100`)
+//     .then(function(response) {
+//         return response.json();
+//     })
+//     .then(function(data) {
+//         let playerOne = data.results.sort();
+//         let pokemonListOne = document.getElementById('pokemon-dropdown-one');
+//         playerOne.map(function(pokemon) {
+//             let pokeElementOne = document.createElement('option');
+//             pokeElementOne.setAttribute('value', pokemon);
+//             pokeElementOne.innerHTML = pokemon.name;
+//             pokemonListOne.appendChild(pokeElementOne);
+//         });
+//         let playerTwo = data.results.sort();
+//         let pokemonListTwo = document.getElementById('pokemon-dropdown-two');
+//         playerTwo.map(function(pokemon) {
+//             let pokeElementTwo = document.createElement('option');
+//             pokeElementTwo.setAttribute('value', pokemon);
+//             pokeElementTwo.innerHTML = pokemon.name;
+//             pokemonListTwo.appendChild(pokeElementTwo);
+//         });
+//     })
+>>>>>>> fa47090157f284a06ac74c87f51019a8e4730005
 
 
 // pokeSelector.addEventListener("change", function() {
