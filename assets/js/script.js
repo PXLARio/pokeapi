@@ -26,7 +26,6 @@ fetch(`https://pokeapi.co/api/v2/pokemon?limit=30`)
 let pokemon_selector_one = document.getElementById("pokemon-dropdown-one");
 pokemon_selector_one.addEventListener("change", function() {
     let pokemon_name = this.value;
-    // console.log(pokemon_name);
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon_name}`)
         .then(function(response) {
             return response.json();
@@ -40,7 +39,7 @@ pokemon_selector_one.addEventListener("change", function() {
 let pokemon_selector_two = document.getElementById("pokemon-dropdown-two");
 pokemon_selector_two.addEventListener("change", function() {
     let pokemon_name = this.value;
-    // console.log(pokemon_name);
+
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon_name}`)
         .then(function(response) {
             return response.json();

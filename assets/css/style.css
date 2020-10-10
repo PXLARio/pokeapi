@@ -84,9 +84,18 @@ i .nes-pokeball {
     text-transform: capitalize;
 }
 
+.pokemon-container {
+    margin-top: 50px;
+}
+
 .pokemon-sprite-one img,
 .pokemon-sprite-two img {
-    margin-top: 50px;
     width: 200px;
     height: 200px;
+    /* background-color: turquoise; */
+}
+
+.pokemon-sprite-one img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
