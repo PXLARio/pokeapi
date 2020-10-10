@@ -78,3 +78,15 @@ i .nes-pokeball {
     background: #3B4CCA;
     padding: 30px 20px;
 }
+
+#pokemon-dropdown-one,
+#pokemon-dropdown-two {
+    text-transform: capitalize;
+}
+
+.pokemon-sprite-one img,
+.pokemon-sprite-two img {
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+}
