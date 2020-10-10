@@ -1,12 +1,12 @@
 ### Simple single page app that queries the PokeAPI, and allows two players to select from 30 different Pokémon. 
 
-This is meant to be a learning project for learning how to work with APIs and display content
+This is meant to be a learning project for working with APIs and displaying content
 
 Features to implement:
 - Pull down images of Pokémon sprites and display on the page ✅
-- Pull down and display stats of selected Pokémon 
-- Add in some margin/padding to shape up layout
-- Look into implementing a wrapper to help with caching; possibly [pokeapi-js-wrapper](https://github.com/PokeAPI/pokeapi-js-wrapper#install) others available [here](https://github.com/PokeAPI/pokeapi)
+- Pull down and display stats of selected Pokémon ✅
+- Add in some margin/padding to shape up layout ✅
+- Need to refactor script a bit, make it a little more modular 🔜
 
 Site uses some of the following: 
 - [Bootstrap 4.5.2](https://getbootstrap.com/)
