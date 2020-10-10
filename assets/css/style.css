@@ -109,3 +109,17 @@ i .nes-pokeball {
     width: 323px;
     height: 400px;
 }
+
+.stats-container {
+    margin: 10px 0;
+}
+
+.stats-container ul {
+    text-align: left;
+    list-style-type: none;
+    font-size: 14px;
+}
+
+.stats-container ul li:first-child {
+    font-size: 18px;
+}
