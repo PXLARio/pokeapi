@@ -30,8 +30,11 @@ pokemon_selector_one.addEventListener("change", function() {
         .then(function(response) {
             return response.json();
         }).then(function(data) {
-            let pokemon_sprite = document.createElement('img');
+            let pokemon_sprite = document.getElementById('player_one');
+            let pokemon_title = document.getElementById('p1-pokemon');
             pokemon_sprite.setAttribute('src', data.sprites["front_default"]);
+            pokemon_sprite.setAttribute('alt', pokemon_name);
+            pokemon_title.innerHTML = pokemon_name;
             document.getElementsByClassName("pokemon-sprite-one")[0].appendChild(pokemon_sprite);
         })
 })
@@ -39,13 +42,16 @@ pokemon_selector_one.addEventListener("change", function() {
 let pokemon_selector_two = document.getElementById("pokemon-dropdown-two");
 pokemon_selector_two.addEventListener("change", function() {
     let pokemon_name = this.value;
-
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon_name}`)
         .then(function(response) {
             return response.json();
         }).then(function(data) {
-            let pokemon_sprite = document.createElement('img');
+            let pokemon_sprite = document.getElementById('player_two');
+            let pokemon_title = document.getElementById('p2-pokemon');
             pokemon_sprite.setAttribute('src', data.sprites["front_default"]);
+            pokemon_sprite.setAttribute('alt', pokemon_name);
+            pokemon_title.innerHTML = pokemon_name;
             document.getElementsByClassName("pokemon-sprite-two")[0].appendChild(pokemon_sprite);
         })
+    document.getElementsByClassName("pokemon-sprite-two").innerHTML = "";
 })
